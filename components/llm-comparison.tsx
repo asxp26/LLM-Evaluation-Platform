@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -33,9 +34,11 @@ export default function LLMComparison() {
           placeholder="Enter your prompt here..."
           className="mb-4"
         />
-        <Button type="submit" className="w-full">
-          Submit
-        </Button>
+        <Link href="/signup">
+          <Button type="submit" className="w-full">
+            Submit
+          </Button>
+        </Link>
       </form>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {Object.entries(responses).map(([llm, response]) => (

@@ -24,7 +24,7 @@ export default function Header() {
     <header className="py-4 px-6 bg-background border-b">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Link href="/" className="text-2xl font-bold">
-          LLM Compare
+          ModelMania
         </Link>
         <div className="flex items-center space-x-4">
           <a

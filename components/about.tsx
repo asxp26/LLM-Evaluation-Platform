@@ -8,10 +8,10 @@ export default function About() {
 
   return (
     <section id="about" className="py-20 scroll-mt-20">
-      <h2 className="text-3xl font-bold mb-6 text-center">About LLM Compare</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">About ModelMania</h2>
       <div className="max-w-2xl mx-auto text-center">
         <p className="mb-4">
-          LLM Compare is a powerful tool that allows you to compare responses
+          ModelMania is a powerful tool that allows you to compare responses
           from multiple Large Language Models side-by-side.
         </p>
         {isExpanded && (
@@ -22,13 +22,13 @@ export default function About() {
             </p>
             <p className="mb-4">
               Whether you are a researcher, developer, or just curious about AI,
-              LLM Compare provides a unique opportunity to explore the
+              ModelMania provides a unique opportunity to explore the
               capabilities and differences of various language models.
             </p>
           </>
         )}
         <Button onClick={() => setIsExpanded(!isExpanded)} variant="link">
-          {isExpanded ? "Show Less" : "Learn More"}
+          {isExpanded ? "Show Less" : "Show More"}
         </Button>
       </div>
     </section>
