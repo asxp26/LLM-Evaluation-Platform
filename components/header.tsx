@@ -37,9 +37,6 @@ export default function Header() {
           <Link href="/signin">
             <Button variant="outline">Sign In</Button>
           </Link>
-          <Link href="/signup">
-            <Button>Sign Up</Button>
-          </Link>
           <Button variant="ghost" size="icon" onClick={toggleTheme}>
             {theme === "light" ? (
               <Moon className="h-[1.2rem] w-[1.2rem]" />

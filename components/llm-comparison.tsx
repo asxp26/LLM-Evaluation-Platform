@@ -34,7 +34,7 @@ export default function LLMComparison() {
           placeholder="Enter your prompt here..."
           className="mb-4"
         />
-        <Link href="/signup">
+        <Link href="/signin">
           <Button type="submit" className="w-full">
             Submit
           </Button>
