@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Card, CardContent } from '@/components/ui/card'
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function SignUpForm() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle sign-up logic here
-    console.log('Sign up with:', name, email, password)
-  }
+    console.log("Sign up with:", name, email, password);
+  };
 
   return (
     <Card className="w-full max-w-md">
@@ -51,10 +51,11 @@ export default function SignUpForm() {
               required
             />
           </div>
-          <Button type="submit" className="w-full">Sign Up</Button>
+          <Button type="submit" className="w-full">
+            Sign Up
+          </Button>
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }
-

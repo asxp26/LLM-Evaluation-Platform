@@ -1,36 +1,36 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function About() {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <section id="about" className="py-20 scroll-mt-20">
       <h2 className="text-3xl font-bold mb-6 text-center">About LLM Compare</h2>
       <div className="max-w-2xl mx-auto text-center">
         <p className="mb-4">
-          LLM Compare is a powerful tool that allows you to compare responses from multiple Large Language Models side-by-side.
+          LLM Compare is a powerful tool that allows you to compare responses
+          from multiple Large Language Models side-by-side.
         </p>
         {isExpanded && (
           <>
             <p className="mb-4">
-              Our platform supports various LLMs, giving you insights into how different models interpret and respond to the same prompt.
+              Our platform supports various LLMs, giving you insights into how
+              different models interpret and respond to the same prompt.
             </p>
             <p className="mb-4">
-              Whether you're a researcher, developer, or just curious about AI, LLM Compare provides a unique opportunity to explore the capabilities and differences of various language models.
+              Whether you are a researcher, developer, or just curious about AI,
+              LLM Compare provides a unique opportunity to explore the
+              capabilities and differences of various language models.
             </p>
           </>
         )}
-        <Button 
-          onClick={() => setIsExpanded(!isExpanded)}
-          variant="link"
-        >
-          {isExpanded ? 'Show Less' : 'Learn More'}
+        <Button onClick={() => setIsExpanded(!isExpanded)} variant="link">
+          {isExpanded ? "Show Less" : "Learn More"}
         </Button>
       </div>
     </section>
-  )
+  );
 }
-
